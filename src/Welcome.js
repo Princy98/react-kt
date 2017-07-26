@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import StatelessComponent from './StatelessComponent';
+import TodoList from './TodoList';
 
 const statelessComponentProps = {
     author: 'Vinay Uttam Vemparala'
 };
+
+const todos = [
+    { title: 'First Todo' },
+    { title: 'Second Todo' },
+    { title: 'Third Todo' },
+];
 
 /**
  * Simple React Component. 
@@ -24,7 +31,8 @@ class Welcome extends Component {
                     React has expanded beyond the web with React Native, a tool to create native 
                     mobile applications using React for iOS and Android.
                 </p>
-                <StatelessComponent {...statelessComponentProps} />             
+                <StatelessComponent {...statelessComponentProps} />
+                <TodoList todos={todos} />             
             </div>
         );
     }
