@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import StatelessComponent from './StatelessComponent';
+
+const statelessComponentProps = {
+    author: 'Vinay Uttam Vemparala'
+};
 
 /**
  * Simple React Component. 
@@ -18,7 +23,8 @@ class Welcome extends Component {
 
                     React has expanded beyond the web with React Native, a tool to create native 
                     mobile applications using React for iOS and Android.
-                </p>                
+                </p>
+                <StatelessComponent {...statelessComponentProps} />             
             </div>
         );
     }
