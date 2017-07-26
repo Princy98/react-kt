@@ -5,6 +5,8 @@ import DefaultProps from './DefaultProps';
 import PropTypesExample from './PropTypesExample';
 import StateExample from './StateExample';
 import OwnerOwneeExample from './OwnerOwneeExample';
+import RefsExample from './RefsExample';
+import ComponentLifecycleEx from './ComponentLifecycleEx';
 
 const statelessComponentProps = {
     author: 'Vinay Uttam Vemparala'
@@ -54,6 +56,7 @@ class Welcome extends Component {
                     <PropTypesExample />
                     <StateExample />
                     <OwnerOwneeExample />
+                    <RefsExample />
                 </div>
             </div>
         );
