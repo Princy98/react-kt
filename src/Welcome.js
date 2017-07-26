@@ -4,6 +4,7 @@ import TodoList from './TodoList';
 import DefaultProps from './DefaultProps';
 import PropTypesExample from './PropTypesExample';
 import StateExample from './StateExample';
+import OwnerOwneeExample from './OwnerOwneeExample';
 
 const statelessComponentProps = {
     author: 'Vinay Uttam Vemparala'
@@ -52,6 +53,7 @@ class Welcome extends Component {
                     <DefaultProps author={'Vinay Uttam Vemparala'} editor={'Vinay Uttam Vemparala'} />
                     <PropTypesExample />
                     <StateExample />
+                    <OwnerOwneeExample />
                 </div>
             </div>
         );

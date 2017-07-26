@@ -10,6 +10,7 @@ class StateExample extends Component {
         this.state = {
             tools: [],
         };
+        
         this._getTools = this._getTools.bind(this);
     }
 
@@ -31,7 +32,6 @@ class StateExample extends Component {
                 }) : <li>'No Toolds Found'</li> }
 
                 <button onClick={this._getTools}>Get Tools</button>
-                
             </div>
         )
     }
