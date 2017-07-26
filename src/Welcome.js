@@ -3,6 +3,7 @@ import StatelessComponent from './StatelessComponent';
 import TodoList from './TodoList';
 import DefaultProps from './DefaultProps';
 import PropTypesExample from './PropTypesExample';
+import StateExample from './StateExample';
 
 const statelessComponentProps = {
     author: 'Vinay Uttam Vemparala'
@@ -50,6 +51,7 @@ class Welcome extends Component {
                     <span>When all parameteres are passed, it would considered the passed properties instead of the specified props.</span>
                     <DefaultProps author={'Vinay Uttam Vemparala'} editor={'Vinay Uttam Vemparala'} />
                     <PropTypesExample />
+                    <StateExample />
                 </div>
             </div>
         );
