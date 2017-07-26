@@ -57,6 +57,7 @@ class Welcome extends Component {
                     <StateExample />
                     <OwnerOwneeExample />
                     <RefsExample />
+                    <ComponentLifecycleEx />
                 </div>
             </div>
         );
