@@ -13,14 +13,17 @@ class ComponentLifecycleEx extends Component {
 
     componentWillMount() {
         console.log('Component Will Mount!');
+        this.setState({ multiplier: 2});
     }
 
     componentDidMount() {
         console.log('Component Mounted!');
+        this._inc = setInterval(this._update, 500);
     }
 
     componentWillUnmount() {
         console.log('Component Will Unmount!');
+        clearInterval(this._inc);
     }
 
     _update() {
@@ -33,7 +36,7 @@ class ComponentLifecycleEx extends Component {
         console.log('Rendering the component!');
         return (
             <div className="component-lifecycle-methods">
-                <button onClick={this._update}>{this.state.value}</button>
+                <button onClick={this._update}>{this.state.value * this.state.multiplier}</button>
             </div>
         )
     }
