@@ -1,11 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const TodoListItem = ({ todo, index }) => {
-	return (
-		<li>
-			{todo.id}. {todo.title} - {todo.description}
-		</li>
-	)
+const TodoListItem = ({ text, completed }) => (
+	<li>{text}</li>
+)
+
+TodoListItem.propTypes = {
+  completed: PropTypes.bool.isRequired,
+  text: PropTypes.string.isRequired
 }
 
 export default TodoListItem;

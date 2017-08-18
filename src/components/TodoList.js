@@ -8,7 +8,7 @@ const TodoList = ({ todos }) => {
 			<ul className="todo-list">
 				{
 					todos.map((todo, index) => {
-                        return <TodoListItem todo={todo} key={index} />
+                        return <TodoListItem key={index} {...todo} />
                     })
                 }
 			</ul>
