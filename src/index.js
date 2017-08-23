@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Welcome from './Welcome';
+import Table from './components/Table';
+import Data from './data';
 
-ReactDOM.render(<Welcome />, document.getElementById('root'));
+ReactDOM.render(<Table {...Data} />, document.getElementById('root'));
