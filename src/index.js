@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Table from './components/Table';
+import TableExample from './components/Table';
 import Data from './data';
+import './styles.css';
 
-ReactDOM.render(<Table {...Data} />, document.getElementById('root'));
+ReactDOM.render(
+	<TableExample {...Data} />,
+	document.getElementById('root')
+);
