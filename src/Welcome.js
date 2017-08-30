@@ -7,6 +7,8 @@ import StateExample from './StateExample';
 import OwnerOwneeExample from './OwnerOwneeExample';
 import RefsExample from './RefsExample';
 import ComponentLifecycleEx from './ComponentLifecycleEx';
+import MessageList from './ContextType/ContextTypeEx';
+//import MessageList from './ContextType/WithoutContextType';
 
 const statelessComponentProps = {
     author: 'Vinay Uttam Vemparala'
@@ -18,6 +20,10 @@ const todos = [
     { title: 'Third Todo' },
 ];
 
+const messages = [
+    { text: 'This is a test message!' },
+    { text: 'This is a test message!' }
+];
 /**
  * Simple React Component. 
  */
@@ -37,6 +43,7 @@ class Welcome extends Component {
                     React has expanded beyond the web with React Native, a tool to create native 
                     mobile applications using React for iOS and Android.
                 </p>
+                {/*
                 <StatelessComponent {...statelessComponentProps} />
                 <TodoList todos={todos} />
                 <div className="default-props-example">
@@ -57,8 +64,11 @@ class Welcome extends Component {
                     <StateExample />
                     <OwnerOwneeExample />
                     <RefsExample />
-                    <ComponentLifecycleEx />
+                    <ComponentLifecycleEx />       
                 </div>
+                */}    
+                <h2>Message List with/without ContextType</h2>
+                <MessageList messages={messages} />
             </div>
         );
     }

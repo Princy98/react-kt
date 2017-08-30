@@ -39,11 +39,11 @@ class ComponentLifecycleEx extends Component {
         }
     }
 
-    componentWillUpdate() {
+    componentWillUpdate(nextProps, nextState) {
         console.log('Component will update');
     }
 
-    componentDidUpdate() {
+    componentDidUpdate(prevProps, prevState) {
         console.log('Component Did Update!');
     }
 
